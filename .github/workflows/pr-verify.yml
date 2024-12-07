@@ -23,3 +23,6 @@ jobs:
 
       - name: Test
         run: dotnet test --configuration Release --no-build
+
+      - name: Format
+        run: dotnet format --no-restore --verify-no-changes --verbosity detailed
